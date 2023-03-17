@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PakKumis">
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome, Your email"
+        android:textColor="#000"
+        android:layout_marginStart="5dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <ImageView
+        android:id="@+id/body"
+        android:layout_width="189dp"
+        android:layout_height="384dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/body"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/eyes"
+        android:layout_width="113dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/eyes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/body"/>
+
+    <ImageView
+        android:id="@+id/hair"
+        android:layout_width="240dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/hair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/eyebrow"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:background="@drawable/eyebrow"
+        android:layout_marginTop="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/body"
+        app:layout_constraintHorizontal_bias="0.498"/>
+    <ImageView
+        android:id="@+id/beard"
+        android:layout_width="177dp"
+        android:layout_height="149dp"
+        android:background="@drawable/beard"
+        android:layout_marginTop="232dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/body"/>
+
+    <ImageView
+        android:id="@+id/moustache"
+        android:layout_width="215dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="212dp"
+        android:background="@drawable/moustache"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/body" />
+
+    <CheckBox
+        android:id="@+id/viewBeard"
+        android:layout_width="95dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginBottom="124dp"
+        android:text="Janggut"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/viewEyebrow"
+        android:layout_width="95dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginBottom="184dp"
+        android:text="Alis"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/viewHair"
+        android:layout_width="95dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="184dp"
+        android:text="Rambut"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/viewMoustache"
+        android:layout_width="95dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="124dp"
+        android:text="Kumis"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="328dp"
+        android:layout_height="52dp"
+        android:background="@drawable/bg_button"
+        android:text="Call Me Head"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.937" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
