@@ -7,21 +7,29 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button btnLoggin;
     EditText loginEml, loginPass;
-
+    TextView register;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        loginEml = findViewById(R.id.editText);
-        loginPass = findViewById(R.id.editText2);
-        btnLoggin = findViewById(R.id.button);
+        loginEml = findViewById(R.id.email);
+        loginPass = findViewById(R.id.pass);
+        btnLoggin = findViewById(R.id.masuk);
 
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), RegisterAktivity.class);
+                startActivity(intent);
+            }
+        });
         btnLoggin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,5 +47,11 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    protected void onStop(){
+        super.onStop();
+        loginEml.setText("");
+        loginPass.setText("");
     }
 }
