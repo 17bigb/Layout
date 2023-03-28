@@ -3,6 +3,7 @@ package com.example.layout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,9 +16,7 @@ public class PakKumis extends AppCompatActivity implements View.OnClickListener{
 
     ImageView hair, eyebrow, moustache, beard;
     CheckBox viewHair, viewEyebrow, viewMoustache, viewBeard;
-
-    Button bttn;
-
+    Button bttnContact;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +31,7 @@ public class PakKumis extends AppCompatActivity implements View.OnClickListener{
         viewEyebrow = findViewById(R.id.viewEyebrow);
         viewMoustache = findViewById(R.id.viewMoustache);
         viewBeard = findViewById(R.id.viewBeard);
+        bttnContact = findViewById(R.id.btnCall);
 
         hair.setVisibility(View.INVISIBLE);
         eyebrow.setVisibility(View.INVISIBLE);
@@ -42,72 +42,8 @@ public class PakKumis extends AppCompatActivity implements View.OnClickListener{
         viewEyebrow.setOnClickListener(this);
         viewMoustache.setOnClickListener(this);
         viewBeard.setOnClickListener(this);
-
-//        if(savedInstanceState == null){
-//            Bundle extras = getIntent().getExtras();
-//
-//            if(extras != null){
-//                this.email = extras.getString("email");
-//                this.password = extras.getString("password");
-//            }
-//
-//            String newWelcome = "";
-//            newWelcome = welcome.getText().toString();
-//            newWelcome += this.email;
-//            welcome.setText(newWelcome);
-//        }
-//        viewHair.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//            @Override
-//            public void onCheckedChanged(CompoundButton compoundButton, boolean checked) {
-//                if(checked){
-//                    hair.setVisibility(View.VISIBLE);
-//                } else {
-//                    hair.setVisibility(View.INVISIBLE);
-//                }
-//            }
-//        });
-//
-//        viewBeard.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//            @Override
-//            public void onCheckedChanged(CompoundButton compoundButton, boolean checked) {
-//                if(checked){
-//                    beard.setVisibility(View.VISIBLE);
-//                } else {
-//                    beard.setVisibility(View.INVISIBLE);
-//                }
-//            }
-//        });
-//
-//        viewMoustache.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//            @Override
-//            public void onCheckedChanged(CompoundButton compoundButton, boolean checked) {
-//                if(checked){
-//                    moustache.setVisibility(View.INVISIBLE);
-//                } else {
-//                    moustache.setVisibility(View.VISIBLE);
-//                }
-//            }
-//        });
-//
-//        viewEyebrow.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//            @Override
-//            public void onCheckedChanged(CompoundButton compoundButton, boolean checked) {
-//                if(checked){
-//                    eyebrow.setVisibility(View.INVISIBLE);
-//                } else {
-//                    eyebrow.setVisibility(View.VISIBLE);
-//                }
-//            }
-//        });
-//
-//        Call.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent moveIntent = new Intent(PakKumis.this, MainActivity.class);
-//                startActivity(moveIntent);
-//            }
-//        });
     }
+
     public void onClick (View view){
         if(view.getId() == viewHair.getId()) {
             if(hair.getVisibility() == View.INVISIBLE){
@@ -134,5 +70,14 @@ public class PakKumis extends AppCompatActivity implements View.OnClickListener{
                 beard.setVisibility(View.INVISIBLE);
             }
         }
+
+        bttnContact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ContactUs.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

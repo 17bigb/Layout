@@ -22,14 +22,8 @@ public class MainActivity extends AppCompatActivity {
         loginEml = findViewById(R.id.email);
         loginPass = findViewById(R.id.pass);
         btnLoggin = findViewById(R.id.masuk);
+        register = findViewById(R.id.register);
 
-        register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), RegisterAktivity.class);
-                startActivity(intent);
-            }
-        });
         btnLoggin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,12 +33,18 @@ public class MainActivity extends AppCompatActivity {
                 if(email.equals("erwintamba7@gmail.com") && pass.equals("215150701111026")){
                     Toast.makeText(MainActivity.this, "Login Berhasil", Toast.LENGTH_SHORT).show();
                     Intent intentMove = new Intent(MainActivity.this, PakKumis.class);
+                    intentMove.putExtra("email_key", email);
                     startActivity(intentMove);
-                } if (email.isEmpty() || pass.isEmpty()){
-                    Toast.makeText(MainActivity.this, "Email dan Password tidak boleh kosong", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(MainActivity.this, "Maaf Email dan Password salah!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Email atau Password Anda salah", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), RegisterAktivity.class);
+                startActivity(intent);
             }
         });
     }

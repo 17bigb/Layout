@@ -17,3 +17,70 @@
     </device-transfer>
     -->
 </data-extraction-rules>
+
+
+
+<!--    //        if(savedInstanceState == null){-->
+<!--    //            Bundle extras = getIntent().getExtras();-->
+<!--    //-->
+<!--    //            if(extras != null){-->
+<!--    //                this.email = extras.getString("email");-->
+<!--    //                this.password = extras.getString("password");-->
+<!--    //            }-->
+<!--    //-->
+<!--    //            String newWelcome = "";-->
+<!--    //            newWelcome = welcome.getText().toString();-->
+<!--    //            newWelcome += this.email;-->
+<!--    //            welcome.setText(newWelcome);-->
+<!--    //        }-->
+<!--    //        viewHair.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {-->
+<!--    //            @Override-->
+<!--    //            public void onCheckedChanged(CompoundButton compoundButton, boolean checked) {-->
+<!--    //                if(checked){-->
+<!--    //                    hair.setVisibility(View.VISIBLE);-->
+<!--    //                } else {-->
+<!--    //                    hair.setVisibility(View.INVISIBLE);-->
+<!--    //                }-->
+<!--    //            }-->
+<!--    //        });-->
+<!--    //-->
+<!--    //        viewBeard.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {-->
+<!--    //            @Override-->
+<!--    //            public void onCheckedChanged(CompoundButton compoundButton, boolean checked) {-->
+<!--    //                if(checked){-->
+<!--    //                    beard.setVisibility(View.VISIBLE);-->
+<!--    //                } else {-->
+<!--    //                    beard.setVisibility(View.INVISIBLE);-->
+<!--    //                }-->
+<!--    //            }-->
+<!--    //        });-->
+<!--    //-->
+<!--    //        viewMoustache.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {-->
+<!--    //            @Override-->
+<!--    //            public void onCheckedChanged(CompoundButton compoundButton, boolean checked) {-->
+<!--    //                if(checked){-->
+<!--    //                    moustache.setVisibility(View.INVISIBLE);-->
+<!--    //                } else {-->
+<!--    //                    moustache.setVisibility(View.VISIBLE);-->
+<!--    //                }-->
+<!--    //            }-->
+<!--    //        });-->
+<!--    //-->
+<!--    //        viewEyebrow.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {-->
+<!--    //            @Override-->
+<!--    //            public void onCheckedChanged(CompoundButton compoundButton, boolean checked) {-->
+<!--    //                if(checked){-->
+<!--    //                    eyebrow.setVisibility(View.INVISIBLE);-->
+<!--    //                } else {-->
+<!--    //                    eyebrow.setVisibility(View.VISIBLE);-->
+<!--    //                }-->
+<!--    //            }-->
+<!--    //        });-->
+<!--    //-->
+<!--    //        Call.setOnClickListener(new View.OnClickListener() {-->
+<!--    //            @Override-->
+<!--    //            public void onClick(View view) {-->
+<!--    //                Intent moveIntent = new Intent(PakKumis.this, MainActivity.class);-->
+<!--    //                startActivity(moveIntent);-->
+<!--    //            }-->
+<!--    //        });-->

@@ -33,7 +33,6 @@
                 android:textColor="@color/white"/>
 
 
-
             <EditText
                 android:id="@+id/email"
                 android:layout_width="match_parent"

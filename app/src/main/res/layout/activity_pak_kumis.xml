@@ -10,7 +10,7 @@
         android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome, Your email"
+        android:text="Welcome, erwintamba7@gmail,com"
         android:textColor="#000"
         android:layout_marginStart="5dp"
         android:textSize="20sp"
@@ -78,22 +78,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/body" />
 
-    <CheckBox
-        android:id="@+id/viewBeard"
-        android:layout_width="95dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="220dp"
-        android:layout_marginBottom="124dp"
-        android:text="Janggut"
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="328dp"
+        android:layout_height="52dp"
+        android:background="@drawable/bg_button"
+        android:text="Contact Us"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.963" />
 
     <CheckBox
         android:id="@+id/viewEyebrow"
         android:layout_width="95dp"
         android:layout_height="63dp"
-        android:layout_marginStart="220dp"
-        android:layout_marginBottom="184dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginBottom="172dp"
         android:text="Alis"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -102,8 +105,8 @@
         android:id="@+id/viewHair"
         android:layout_width="95dp"
         android:layout_height="63dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginBottom="184dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="172dp"
         android:text="Rambut"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -112,22 +115,20 @@
         android:id="@+id/viewMoustache"
         android:layout_width="95dp"
         android:layout_height="63dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginBottom="124dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="108dp"
         android:text="Kumis"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/btnCall"
-        android:layout_width="328dp"
-        android:layout_height="52dp"
-        android:background="@drawable/bg_button"
-        android:text="Call Me Head"
+    <CheckBox
+        android:id="@+id/viewBeard"
+        android:layout_width="95dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginBottom="108dp"
+        android:text="Janggut"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.937" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
